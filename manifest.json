@@ -1,0 +1,21 @@
+{
+	"manifest_version": 3,
+
+	"name": "Better Youtube",
+	"description": "This browser extenson slightly edits youtube page code so it become better.",
+	"version": "1.0",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "host_permissions": [
+        "http://www.youtube.com/*"
+    ],
+	"content_scripts": [ {
+        "matches": ["http://www.youtube.com/*", "https://www.youtube.com/*"],
+        "js": ["youtube.js"],
+        "run_at": "document_end"
+      } ]
+}
