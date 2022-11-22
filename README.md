@@ -1,3 +1,5 @@
+## Deprecated due to new youtube look.
+
 # Better Youtube chrome extension
 This browser extenson slightly edits youtube page code so it become better. For now, this extension removes unnecessary buttons below the video.
 
